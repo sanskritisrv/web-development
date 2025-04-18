@@ -1,0 +1,23 @@
+
+#box{
+    background-color: blue;
+    color : white; 
+}
+
+.heading{
+    text-align:center;
+    color: red;
+    text-decoration:blue dotted underline;
+}
+
+button{
+    background-color: green;
+}
+
+#one{
+    font-size: 25px; ;
+}
+
+#three{
+    font-size: 10px;
+}
