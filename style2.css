@@ -4,4 +4,38 @@ div{
     background-color: aqua;
     border: 2px solid black;
     display: inline-block;
+     
 }
+
+#box1{
+    position: static;
+    background-image: url("animal_photo.jpg");
+    /*here when we go to the website and see the background image there,it doesnt come right that we why we have to learn background size property*/
+    background-size :contain;
+    background-repeat :no-repeat;
+    /* cover means that the entire screen is covered , no blank spaces are left*/
+    /*contain means the image will be completely visible, blank spaces cover karna ya fit hona is not the priority*/
+    /*auto means jitna aa paa rahi hoti hai utni hi aati hai*/
+
+}
+#box2{
+    position: relative;
+    top: 10px;
+    z-index: 0;
+    background-color: green;
+}
+
+#box3{/* absolute me we set w reference to the non static ancestors*/
+    position: absolute;
+    top: 10px;
+    z-index: 2;
+    background-color: red;
+}
+
+#box4{/* we get positioned relative to the browser window */
+    position: fixed;
+    top: 5px;
+    z-index: -2;
+    background-color: black;
+}
+/* sticky me we ger positioned with refernce to the users scroll position

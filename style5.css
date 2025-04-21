@@ -1,0 +1,36 @@
+div{
+    height: 100px;
+    width: 100px;
+    background-color: aquamarine;
+    border: 2px solid black;
+    transition-property:all ;/*koun koun se property chnage hongi transition jab kare hum*/
+    transition-delay: 1s;/*kitne time baad transition hoga*/
+    transition-timing-function: linear;/*transition kaise hoga like the effect*/
+    transition-duration: 2s;/*transition kitne der me complete hoga*/
+    transform: rotate(45deg);
+    /*can be done on x y and z axis also as rotate :   x etc etc*/
+    transform: scale(2,1);/*first is for x axis and second for y axis*/
+
+    /*now we will study animation*/
+    animation-name: colorAnimate;
+    animation: duration 3s; 
+    animation-timing-function: ease-in;
+    animation-iteration-count: 3;
+}
+/*this is the template that we will have to write if we are using animation, this initiates the process*/
+@keyframes colorAnimate{
+    from {background-color: aquamarine;}
+    to {background-color: red;}
+}
+
+div:hover{
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    transform: translate(20px);/*slides the element to the right , for y write translateY*/
+    transform: skew(30deg);/*dono corners ko pakad ke kheech diya*/
+}
+
+div:active{
+    background-color: pink;
+}

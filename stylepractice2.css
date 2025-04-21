@@ -1,0 +1,10 @@
+div{
+  height: 50px;
+  width: 50px;
+  background-image: url(animal_photo.jpg);  
+  background-size: cover;
+  color: white;
+  position: fixed;
+  right: 10px;
+  top: 50px;
+}
